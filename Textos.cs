@@ -65,6 +65,13 @@ namespace Utilidades
             public const string MENSAJE_PROGRAMA_CODIGO_EXISTE = "Ya existe un registro de programas con el mismo código de programa que está intentando crear.";
             public const string MENSAJE_PROGRAMA_NO_EXISTE_CODIGO = "No existe un registro de programas con el código de programa indicado.";
         }
+
+        public static class GruposProgramas
+        {
+            public const string MENSAJE_GRUPOPROGRAMA_NO_EXISTE_ID = "No existe un registro de grupos programas con el Id indicado.";
+            public const string MENSAJE_GRUPOPROGRAMA_YA_EXISTE = "Ya existe un registro de grupos programas con el mismo grupo y programa que está intentando crear.";
+            public const string MENSAJE_GRUPOPROGRAMA_NO_EXISTE_GRUPO_PROGRAMA = "No existe un registro de grupos programas con el mismo grupo y programa indicado.";
+        }
         #endregion
 
         #region REG_Textos del microservicio DatosComunes
