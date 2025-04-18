@@ -21,6 +21,7 @@ namespace Utilidades
             public const string MENSAJE_CORREO_ENVIADO_ERROR = "No se ha podido enviar la notificación de correo electrónico.";
             public const string MENSAJE_CORREO_CONFIGURACION_ERROR = "Todos los datos de configuración de correo electrónico deben estar diligenciados en AppSettings.";
             public const string MENSAJE_CORREO_ADJUNTOS_ERROR = "Error al procesar datos adjuntos del correo.";
+            public const string MENSAJE_ERROR_CONSUMO_SERVICIO = "Error al consumir el servicio.";
 
             public const string VALIDA_CAMPO_OBLIGATORIO = "El dato es obligatorio.";
             public const string VALIDA_VALOR_EXCEDE_LONGITUD = "El valor ingresado supera la longitud máxima permitida.";
