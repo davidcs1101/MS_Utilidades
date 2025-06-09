@@ -1,11 +1,4 @@
-﻿using log4net.Core;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Utilidades
+﻿namespace Utilidades
 {
     public static class Textos
     {
@@ -88,6 +81,16 @@ namespace Utilidades
             public const string MENSAJE_DATOCONSTANTE_NO_EXISTE_ID = "No existe un registro de datos constantes con el Id indicado.";
             public const string MENSAJE_DATOCONSTANTE_CODIGO_EXISTE = "Ya existe un registro de datos constantes con el mismo código de dato constante que está intentando crear.";
             public const string MENSAJE_DATOCONSTANTE_NO_EXISTE_CODIGO = "No existe un registro de datos constantes con el código de dato constante indicado.";
+        }
+        #endregion
+
+        #region REG_Estados colas de solicitudes
+        public static class EstadosColas 
+        {
+            public const string PENDIENTE = "pendiente";
+            public const string PROCESANDO = "procesando";
+            public const string EXITOSO = "exitoso";
+            public const string FALLIDO = "fallido";
         }
         #endregion
 
