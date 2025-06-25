@@ -84,13 +84,12 @@
         }
         #endregion
 
-        #region REG_Estados colas de solicitudes
-        public static class EstadosColas 
+
+        #region REG_EVENTOS colas de solicitudes
+        public static class EventosColas
         {
-            public const string PENDIENTE = "pendiente";
-            public const string PROCESANDO = "procesando";
-            public const string EXITOSO = "exitoso";
-            public const string FALLIDO = "fallido";
+            public const string ENVIARCORREO = "EnviarCorreo";
+            public const string REGISTRARUSUARIOCONSEDE = "RegistrarUsuarioConSede";
         }
         #endregion
 
