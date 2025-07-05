@@ -15,6 +15,7 @@
             public const string MENSAJE_CORREO_CONFIGURACION_ERROR = "Todos los datos de configuración de correo electrónico deben estar diligenciados en AppSettings.";
             public const string MENSAJE_CORREO_ADJUNTOS_ERROR = "Error al procesar datos adjuntos del correo.";
             public const string MENSAJE_ERROR_CONSUMO_SERVICIO = "Error al consumir el servicio.";
+            public const string MENSAJE_TOKEN_SIN_USUARIOID = "No se encontró el 'UsuarioId' en el token JWT.";
 
             public const string VALIDA_CAMPO_OBLIGATORIO = "El dato es obligatorio.";
             public const string VALIDA_VALOR_EXCEDE_LONGITUD = "El valor ingresado supera la longitud máxima permitida.";
@@ -34,6 +35,7 @@
             public const string MENSAJE_USUARIO_DOCUMENTO_EXISTE = "Ya existe un registro de usuario con el mismo documento y tipo de usuario que está intentando crear.";
             public const string MENSAJE_USUARIO_NO_EXISTE_ID = "No existe un registro de usuarios con el Id indicado.";
             public const string MENSAJE_USUARIO_NO_EXISTE_NOMBRE = "No existe un registro de usuarios con el nombre de usuario indicado.";
+            public const string MENSAJE_USUARIO_NO_CAMBIO_CLAVE = "El usuario no ha realizado el cambio de clave. No tienes permiso para realizar la acción.";
 
             public const string MENSAJE_USUARIO_AUDITORIA_NO_EXISTE_ID = "El usuario indicado en el campo de auditoría no existe (usuario que crea, actualiza, o elimina).";
         }
@@ -84,6 +86,16 @@
         }
         #endregion
 
+        #region REG_textos para procesos de las colas de solicitudes
+        public static class ColasSolicitudes
+        {
+            //Para manejo de colas en todos los microservicios
+            public const string MENSAJE_COLASOLICITUD_YA_PROCESADA = "El registro de solicitud ya fue procesado.";
+            public const string MENSAJE_COLASOLICITUD_NO_EXISTE_ID = "No existe un registro de ColasSolicitudes con el Id indicado.";
+            public const string MENSAJE_COLASOLICITUD_ERROR_PROCESO = "Error al procesar la cola de solicitudes.";
+            public const string MENSAJE_COLASOLICITUD_ERROR_ENCOLAR_HANGFIRE = "Error al tratar de encolar en HangFire.";
+        }
+        #endregion
 
         #region REG_EVENTOS colas de solicitudes
         public static class EventosColas
