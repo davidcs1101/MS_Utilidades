@@ -86,6 +86,15 @@
         }
         #endregion
 
+        #region REG_Textos del microservicio empresas
+        public static class Sedes
+        {
+            public const string MENSAJE_SEDE_NO_EXISTE_ID = "No existe un registro de sedes con el Id indicado.";
+            //public const string MENSAJE_LISTA_CODIGO_EXISTE = "Ya existe un registro de listas con el mismo código de lista que está intentando crear.";
+            //public const string MENSAJE_LISTA_NO_EXISTE_CODIGO = "No existe un registro de listas con el código de lista indicado.";
+        }
+        #endregion
+
         #region REG_textos para procesos de las colas de solicitudes
         public static class ColasSolicitudes
         {
