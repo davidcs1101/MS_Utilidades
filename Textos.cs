@@ -81,8 +81,8 @@
         public static class ListasDetalles
         {
             public const string MENSAJE_LISTADETALLE_NO_EXISTE_ID = "No existe un registro de listas con el Id indicado.";
-            public static string MENSAJE_LISTADETALLE_NO_EXISTE_EN_CODIGOLISTA(int idDetalle, string CodigoLista) => 
-                $"El Id de detalle {idDetalle} indicado no se encuentra asociado al código de lista {CodigoLista}.";
+            public static string MENSAJE_LISTADETALLE_NO_EXISTE_EN_CODIGOLISTA(string CodigoLista, string CodigoListaDetalle) => 
+                $"El código de lista detalle indicado: {CodigoListaDetalle}, no se encuentra asociado a la lista {CodigoLista}.";
             public static string MENSAJE_LISTADETALLE_NO_EXISTE_EN_CODIGOCONSTANTE(string codigoConstante, string CodigoListaDetalle) =>
                 $"El código de lista detalle indicado: {CodigoListaDetalle}, no se encuentra asociado a la constante {codigoConstante}.";
         }
