@@ -115,6 +115,13 @@
         }
         #endregion
 
+        #region REG_Caches de datos
+        public static class CacheDatos 
+        {
+
+        }
+        #region
+
         #region REG_EVENTOS colas de solicitudes
         public static class EventosColas
         {
