@@ -96,11 +96,16 @@
         #endregion
 
         #region REG_Textos del microservicio empresas
+        public static class Empresas
+        {
+            public const string MENSAJE_EMPRESA_NO_EXISTE_ID = "No existe un registro de empresas con el Id indicado.";
+            public const string MENSAJE_EMPRESA_DOCUMENTO_EXISTE = "Ya existe un registro de empresas con el mismo documento y tipo de identificación que está intentando crear.";
+            public const string MENSAJE_EMPRESA_VERIFICADA = "La empresa se ha verificado de manera correcta.";
+        }
+
         public static class Sedes
         {
             public const string MENSAJE_SEDE_NO_EXISTE_ID = "No existe un registro de sedes con el Id indicado.";
-            //public const string MENSAJE_LISTA_CODIGO_EXISTE = "Ya existe un registro de listas con el mismo código de lista que está intentando crear.";
-            //public const string MENSAJE_LISTA_NO_EXISTE_CODIGO = "No existe un registro de listas con el código de lista indicado.";
         }
         #endregion
 
@@ -118,9 +123,10 @@
         #region REG_Caches de datos
         public static class CacheDatos 
         {
-
+            public const string MENSAJE_CACHE_DATOSCOMUNES_INICIALIZADA = "Caché de datos comunes inicializada.";
+            public const string MENSAJE_CACHE_DATOSCOMUNES_ACTUALIZADA = "Caché de datos comunes actualizada";
         }
-        #region
+        #endregion
 
         #region REG_EVENTOS colas de solicitudes
         public static class EventosColas
