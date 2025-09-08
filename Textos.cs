@@ -133,6 +133,7 @@
         {
             public const string ENVIARCORREO = "EnviarCorreo";
             public const string REGISTRARUSUARIOCONSEDE = "RegistrarUsuarioConSede";
+            public const string LISTASDETALLEACTUALIZADA = "ActualizarListasDetalleServicios";
         }
         #endregion
 
