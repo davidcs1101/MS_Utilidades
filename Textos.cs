@@ -85,6 +85,7 @@
                 $"El código de lista detalle indicado: {CodigoListaDetalle}, no se encuentra asociado a la lista {CodigoLista}.";
             public static string MENSAJE_LISTADETALLE_NO_EXISTE_EN_CODIGOCONSTANTE(string codigoConstante, string CodigoListaDetalle) =>
                 $"El código de lista detalle indicado: {CodigoListaDetalle}, no se encuentra asociado a la constante {codigoConstante}.";
+            public const string MENSAJE_LISTADETALLE_CODIGO_EXISTE = "Ya existe un registro de listas detalle con el Id de lista y el código de detalle que está intentando crear.";
         }
 
         public static class DatosConstantes
