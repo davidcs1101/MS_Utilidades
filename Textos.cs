@@ -86,6 +86,7 @@
             public static string MENSAJE_LISTADETALLE_NO_EXISTE_EN_CODIGOCONSTANTE(string codigoConstante, string CodigoListaDetalle) =>
                 $"El código de lista detalle indicado: {CodigoListaDetalle}, no se encuentra asociado a la constante {codigoConstante}.";
             public const string MENSAJE_LISTADETALLE_CODIGO_EXISTE = "Ya existe un registro de listas detalle con el Id de lista y el código de detalle que está intentando crear.";
+            public const string MENSAJE_LISTADETALLE_NO_EXISTE_CODIGO = "No existe un registro de listas detalle con el Id de lista y el código de detalle indicado.";
         }
 
         public static class DatosConstantes
@@ -93,6 +94,11 @@
             public const string MENSAJE_DATOCONSTANTE_NO_EXISTE_ID = "No existe un registro de datos constantes con el Id indicado.";
             public const string MENSAJE_DATOCONSTANTE_CODIGO_EXISTE = "Ya existe un registro de datos constantes con el mismo código de dato constante que está intentando crear.";
             public const string MENSAJE_DATOCONSTANTE_NO_EXISTE_CODIGO = "No existe un registro de datos constantes con el código de dato constante indicado.";
+        }
+
+        public static class DatosConstantesDetalles
+        {
+            public const string MENSAJE_DATOCONSTANTEDETALLE_LISTADETALLE_YA_EXISTE = "Ya existe un registro de datos constante detalle con el Id de datos constante y el Id de listas detalle que está intentando crear.";
         }
         #endregion
 
@@ -135,6 +141,7 @@
             public const string ENVIARCORREO = "EnviarCorreo";
             public const string REGISTRARUSUARIOCONSEDE = "RegistrarUsuarioConSede";
             public const string LISTASDETALLEACTUALIZADA = "ActualizarListasDetalleServicios";
+            public const string CONSTANTESDETALLEACTUALIZADO = "ActualizarConstantesDetalleServicios";
         }
         #endregion
 
