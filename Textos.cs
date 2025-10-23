@@ -94,11 +94,13 @@
             public const string MENSAJE_DATOCONSTANTE_NO_EXISTE_ID = "No existe un registro de datos constantes con el Id indicado.";
             public const string MENSAJE_DATOCONSTANTE_CODIGO_EXISTE = "Ya existe un registro de datos constantes con el mismo código de dato constante que está intentando crear.";
             public const string MENSAJE_DATOCONSTANTE_NO_EXISTE_CODIGO = "No existe un registro de datos constantes con el código de dato constante indicado.";
+            public const string MENSAJE_DATOCONSTANTE_LISTA_NO_EXISTE_CODIGO = "El Id de lista, asociado al código de dato constante indicado, no tiene asociado un registro en listas detalles con el código lista detalle indicado.";
         }
 
         public static class DatosConstantesDetalles
         {
             public const string MENSAJE_DATOCONSTANTEDETALLE_LISTADETALLE_YA_EXISTE = "Ya existe un registro de datos constante detalle con el Id de datos constante y el Id de listas detalle que está intentando crear.";
+            public const string MENSAJE_DATOCONSTANTEDETALLE_LISTADETALLE_NO_EXISTE_ID = "No existe un registro de datos constante detalle con el Id indicado.";
         }
         #endregion
 
