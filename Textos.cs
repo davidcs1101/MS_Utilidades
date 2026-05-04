@@ -136,16 +136,5 @@
             public const string MENSAJE_CACHE_DATOSCOMUNES_ACTUALIZADA = "Caché de datos comunes actualizada";
         }
         #endregion
-
-        #region REG_EVENTOS colas de solicitudes
-        public static class EventosColas
-        {
-            public const string ENVIARCORREO = "EnviarCorreo";
-            public const string REGISTRARUSUARIOCONSEDE = "RegistrarUsuarioConSede";
-            public const string LISTASDETALLEACTUALIZADA = "ActualizarListasDetalleServicios";
-            public const string CONSTANTESDETALLEACTUALIZADO = "ActualizarConstantesDetalleServicios";
-        }
-        #endregion
-
     }
 }
