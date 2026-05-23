@@ -102,6 +102,7 @@
             public const string MENSAJE_DATOCONSTANTEDETALLE_LISTADETALLE_YA_EXISTE = "Ya existe un registro de datos constante detalle con el Id de datos constante y el Id de listas detalle que está intentando crear.";
             public const string MENSAJE_DATOCONSTANTEDETALLE_LISTADETALLE_NO_EXISTE_ID = "No existe un registro de datos constante detalle con el Id indicado.";
         }
+
         #endregion
 
         #region REG_Textos del microservicio empresas
@@ -110,11 +111,13 @@
             public const string MENSAJE_EMPRESA_NO_EXISTE_ID = "No existe un registro de empresas con el Id indicado.";
             public const string MENSAJE_EMPRESA_DOCUMENTO_EXISTE = "Ya existe un registro de empresas con el mismo documento y tipo de identificación que está intentando crear.";
             public const string MENSAJE_EMPRESA_VERIFICADA = "La empresa se ha verificado de manera correcta.";
+            public const string MENSAJE_EMPRESA_YA_VERIFICADA = "La empresa ya se encuentra verificada.";
         }
 
         public static class Sedes
         {
             public const string MENSAJE_SEDE_NO_EXISTE_ID = "No existe un registro de sedes con el Id indicado.";
+            public const string MENSAJE_SEDE_CODIGOHABILITACION_EXISTE = "Ya existe un registro de sedes con el mismo codigo de habilitación y código de sede que está intentando crear.";
         }
         #endregion
 
