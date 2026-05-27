@@ -112,6 +112,7 @@
             public const string MENSAJE_EMPRESA_DOCUMENTO_EXISTE = "Ya existe un registro de empresas con el mismo documento y tipo de identificación que está intentando crear.";
             public const string MENSAJE_EMPRESA_VERIFICADA = "La empresa se ha verificado de manera correcta.";
             public const string MENSAJE_EMPRESA_YA_VERIFICADA = "La empresa ya se encuentra verificada.";
+            public const string MENSAJE_EMPRESA_EXCEDE_CANTIDAD_SEDES = "El consecutivo para la nueva sede supera la cantidad de sedes permitidas para la empresa.";
         }
 
         public static class Sedes
