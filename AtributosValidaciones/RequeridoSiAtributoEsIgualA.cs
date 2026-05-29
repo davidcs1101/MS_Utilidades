@@ -5,12 +5,12 @@ namespace Utilidades.AtributosValidaciones
 {
 
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
-    public class AtributoRequeridoSi: ValidationAttribute
+    public class RequeridoSiAtributoEsIgualA : ValidationAttribute
     {
         private readonly string _propiedadDependiente;
         private readonly object _valorEvaluar;
 
-        public AtributoRequeridoSi(string propiedadDependiente, object valorEvaluar)
+        public RequeridoSiAtributoEsIgualA(string propiedadDependiente, object valorEvaluar)
         {
             _propiedadDependiente = propiedadDependiente;
             _valorEvaluar = valorEvaluar;

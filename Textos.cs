@@ -22,6 +22,8 @@
             public const string VALIDA_CORREO_NO_VALIDO = "El correo electrónico no es válido.";
         }
 
+
+
         #region REG_Mensajes del microservicio de Seguridad
         public static class Usuarios
         {
@@ -70,6 +72,8 @@
         }
         #endregion
 
+
+
         #region REG_Textos del microservicio DatosComunes
         public static class Listas
         {
@@ -105,6 +109,8 @@
 
         #endregion
 
+
+
         #region REG_Textos del microservicio empresas
         public static class Empresas
         {
@@ -118,9 +124,17 @@
         public static class Sedes
         {
             public const string MENSAJE_SEDE_NO_EXISTE_ID = "No existe un registro de sedes con el Id indicado.";
-            public const string MENSAJE_SEDE_CODIGOHABILITACION_EXISTE = "Ya existe un registro de sedes con el mismo codigo de habilitación y código de sede que está intentando crear.";
+        }
+
+        public static class SedesSalud
+        {
+            public const string MENSAJE_SEDESALUD_SEDE_YA_EXISTE = "Ya existe un registro de sede salud con el Id de sede que está intentando crear.";
+            public const string MENSAJE_SEDESALUD_NO_EXISTE_ID = "No existe un registro de sede de salud con el Id indicado.";
+            public const string MENSAJE_SEDESALUD_CODIGOHABILITACION_EXISTE = "Ya existe un registro de sede de salud con el mismo codigo de habilitación y código de sede que está intentando crear.";
         }
         #endregion
+
+
 
         #region REG_textos para procesos de las colas de solicitudes
         public static class ColasSolicitudes
@@ -132,6 +146,8 @@
             public const string MENSAJE_COLASOLICITUD_ERROR_ENCOLAR_HANGFIRE = "Error al tratar de encolar en HangFire.";
         }
         #endregion
+
+
 
         #region REG_Caches de datos
         public static class CacheDatos 
