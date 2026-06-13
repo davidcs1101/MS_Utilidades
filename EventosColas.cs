@@ -12,5 +12,6 @@ namespace Utilidades
         public const string REGISTRARUSUARIOCONSEDE = "RegistrarUsuarioConSede";
         public const string LISTASDETALLEACTUALIZADA = "ActualizarListasDetalleServicios";
         public const string CONSTANTESDETALLEACTUALIZADO = "ActualizarConstantesDetalleServicios";
+        public const string ENVIARCORREOEMPRESA = "EnviarCorreoEmpresa";
     }
 }
