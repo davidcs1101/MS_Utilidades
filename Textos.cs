@@ -135,6 +135,15 @@
         #endregion
 
 
+        #region REG_Textos del microservicio de Envío de Correos
+
+        public static class Correos
+        {
+            public const string MENSAJE_CORREO_NO_EXISTE_ID = "No existe un registro de correo con el Id de correo y empresa indicados.";
+        } 
+
+        #endregion
+
 
         #region REG_textos para procesos de las colas de solicitudes
         public static class ColasSolicitudes
