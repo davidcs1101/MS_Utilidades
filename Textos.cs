@@ -140,7 +140,13 @@
         public static class Correos
         {
             public const string MENSAJE_CORREO_NO_EXISTE_ID = "No existe un registro de correo con el Id de correo y empresa indicados.";
-        } 
+        }
+
+        public static class CorreosConfiguraciones
+        {
+            public const string MENSAJE_CORREOCONFIGURACION_CODIGO_EXISTE = "Ya existe un registro de configuración de correo en la empresa con el mismo código de configuración que está intentando crear.";
+            public const string MENSAJE_CORREOCONFIGURACION_NO_EXISTE_CODIGO = "No existe un registro de configuración de correo en la empresa con el código de configuración indicado.";
+        }
 
         #endregion
 
