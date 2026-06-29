@@ -142,10 +142,16 @@
             public const string MENSAJE_CORREO_NO_EXISTE_ID = "No existe un registro de correo con el Id de correo y empresa indicados.";
         }
 
-        public static class CorreosConfiguraciones
+        public static class Configuraciones
         {
             public const string MENSAJE_CORREOCONFIGURACION_CODIGO_EXISTE = "Ya existe un registro de configuración de correo en la empresa con el mismo código de configuración que está intentando crear.";
             public const string MENSAJE_CORREOCONFIGURACION_NO_EXISTE_CODIGO = "No existe un registro de configuración de correo en la empresa con el código de configuración indicado.";
+        }
+
+        public static class Plantillas
+        {
+            //public const string MENSAJE_PLANTILLAS_CODIGO_EXISTE = "Ya existe un registro de configuración de correo en la empresa con el mismo código de configuración que está intentando crear.";
+            public const string MENSAJE_PLANTILLAS_NO_EXISTE_CODIGO = "No existe un registro de plantillas de correo en la empresa con el código de plantilla indicado.";
         }
 
         #endregion
