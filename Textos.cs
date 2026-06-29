@@ -144,8 +144,9 @@
 
         public static class Configuraciones
         {
-            public const string MENSAJE_CORREOCONFIGURACION_CODIGO_EXISTE = "Ya existe un registro de configuración de correo en la empresa con el mismo código de configuración que está intentando crear.";
-            public const string MENSAJE_CORREOCONFIGURACION_NO_EXISTE_CODIGO = "No existe un registro de configuración de correo en la empresa con el código de configuración indicado.";
+            public const string MENSAJE_CONFIGURACION_NO_EXISTE_ID = "No existe un registro de configuración con el Id de configuración y empresa indicados.";
+            public const string MENSAJE_CONFIGURACION_CODIGO_EXISTE = "Ya existe un registro de configuración de correo en la empresa con el mismo código de configuración que está intentando crear.";
+            public const string MENSAJE_CONFIGURACION_NO_EXISTE_CODIGO = "No existe un registro de configuración de correo en la empresa con el código de configuración indicado.";
         }
 
         public static class Plantillas
