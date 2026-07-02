@@ -147,6 +147,7 @@
             public const string MENSAJE_CONFIGURACION_NO_EXISTE_ID = "No existe un registro de configuración con el Id de configuración y empresa indicados.";
             public const string MENSAJE_CONFIGURACION_CODIGO_EXISTE = "Ya existe un registro de configuración de correo en la empresa con el mismo código de configuración que está intentando crear.";
             public const string MENSAJE_CONFIGURACION_NO_EXISTE_CODIGO = "No existe un registro de configuración de correo en la empresa con el código de configuración indicado.";
+            public const string MENSAJE_CONFIGURACION_INACTIVA = "El código de configuración de correo se encuentra inactiva.";
         }
 
         public static class Plantillas
@@ -154,6 +155,7 @@
             public const string MENSAJE_PLANTILLA_NO_EXISTE_ID = "No existe un registro de plantilla con el Id de plantilla y empresa indicados.";
             public const string MENSAJE_PLANTILLA_CODIGO_EXISTE = "Ya existe un registro de plantillas de correo en la empresa con el mismo código de plantilla que está intentando crear.";
             public const string MENSAJE_PLANTILLA_NO_EXISTE_CODIGO = "No existe un registro de plantillas de correo en la empresa con el código de plantilla indicado.";
+            public const string MENSAJE_PLANTILLA_INACTIVA = "El código de plantilla de correo se encuentra inactiva.";
         }
 
         #endregion
