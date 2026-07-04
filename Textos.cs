@@ -16,6 +16,7 @@
             public const string MENSAJE_CORREO_ADJUNTOS_ERROR = "Error al procesar datos adjuntos del correo.";
             public const string MENSAJE_ERROR_CONSUMO_SERVICIO = "Error al consumir el servicio.";
             public const string MENSAJE_TOKEN_SIN_USUARIOID = "No se encontró el 'UsuarioId' en el token JWT.";
+            public const string MENSAJE_TOKEN_SIN_GRUPOID = "No se encontró el 'GrupoId' en el token JWT.";
 
             public const string VALIDA_CAMPO_OBLIGATORIO = "El dato es obligatorio.";
             public const string VALIDA_VALOR_EXCEDE_LONGITUD = "El valor ingresado supera la longitud máxima permitida.";
@@ -69,6 +70,13 @@
             public const string MENSAJE_GRUPOPROGRAMA_NO_EXISTE_ID = "No existe un registro de grupos programas con el Id indicado.";
             public const string MENSAJE_GRUPOPROGRAMA_YA_EXISTE = "Ya existe un registro de grupos programas con el mismo grupo y programa que está intentando crear.";
             public const string MENSAJE_GRUPOPROGRAMA_NO_EXISTE_GRUPO_PROGRAMA = "No existe un registro de grupos programas con el mismo grupo y programa indicado.";
+        }
+
+        public static class Permisos
+        {
+            public const string MENSAJE_PERMISO_NO_EXISTE_ID = "No existe un registro de permisos con el Id indicado.";
+            public static string MENSAJE_PERMISO_INACTIVO(string codigo) => $"El código de permiso de usuario ({codigo}) se encuentra inactivo.";
+            public static string MENSAJE_PERMISO_NO_EXISTE_CODIGO(string codigo) => $"No existe un registro de permisos con el código de permiso indicado. ({codigo})";
         }
         #endregion
 
