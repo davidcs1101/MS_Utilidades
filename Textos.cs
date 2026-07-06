@@ -16,7 +16,7 @@
             public const string MENSAJE_CORREO_ADJUNTOS_ERROR = "Error al procesar datos adjuntos del correo.";
             public const string MENSAJE_ERROR_CONSUMO_SERVICIO = "Error al consumir el servicio.";
             public const string MENSAJE_TOKEN_SIN_USUARIOID = "No se encontró el 'UsuarioId' en el token JWT.";
-            public const string MENSAJE_TOKEN_SIN_GRUPOID = "No se encontró el 'GrupoId' en el token JWT.";
+            public const string MENSAJE_TOKEN_SIN_GRUPO = "No se encontró el 'CodigoGrupo' en el token JWT.";
 
             public const string VALIDA_CAMPO_OBLIGATORIO = "El dato es obligatorio.";
             public const string VALIDA_VALOR_EXCEDE_LONGITUD = "El valor ingresado supera la longitud máxima permitida.";
