@@ -10,8 +10,10 @@ namespace Utilidades
     {
         public const string ENVIARCORREO = "EnviarCorreo";
         public const string REGISTRARUSUARIOCONSEDE = "RegistrarUsuarioConSede";
+        public const string ENVIARCORREOEMPRESA = "EnviarCorreoEmpresa";
+
         public const string LISTASDETALLEACTUALIZADA = "ActualizarListasDetalleServicios";
         public const string CONSTANTESDETALLEACTUALIZADO = "ActualizarConstantesDetalleServicios";
-        public const string ENVIARCORREOEMPRESA = "EnviarCorreoEmpresa";
+        public const string PERMISOSACTUALIZADOS = "ActualizarPermisos";
     }
 }
