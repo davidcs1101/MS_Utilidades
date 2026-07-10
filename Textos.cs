@@ -41,6 +41,7 @@
             public const string MENSAJE_USUARIO_NO_CAMBIO_CLAVE = "El usuario no ha realizado el cambio de clave. No tienes permiso para realizar la acción.";
 
             public const string MENSAJE_USUARIO_AUDITORIA_NO_EXISTE_ID = "El usuario indicado en el campo de auditoría no existe (usuario que crea, actualiza, o elimina).";
+            public const string MENSAJE_USUARIO_NO_TIENE_GRUPO_DIRECTO = "El usuario no cuenta con un grupo directamente asociado.";
         }
 
         public static class UsuariosSedesGrupos

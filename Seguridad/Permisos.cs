@@ -22,7 +22,8 @@
 
         public static class Usuarios
         {
-            public const string REGISTRARCONSEDE = "USUARIOS.REGISTRARCONSEDE";
+            public const string CREARCONSEDE = "USUARIOS.CREARCONSEDE";
+            public const string CREARCONGRUPO = "USUARIOS.CREARCONGRUPO";
             public const string CONSULTAR = "USUARIOS.CONSULTAR";
             public const string LISTAR = "USUARIOS.LISTAR";
         }
