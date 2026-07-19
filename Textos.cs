@@ -66,11 +66,11 @@
             public const string MENSAJE_PROGRAMA_NO_EXISTE_CODIGO = "No existe un registro de programas con el código de programa indicado.";
         }
 
-        public static class GruposProgramas
+        public static class Acciones
         {
-            public const string MENSAJE_GRUPOPROGRAMA_NO_EXISTE_ID = "No existe un registro de grupos programas con el Id indicado.";
-            public const string MENSAJE_GRUPOPROGRAMA_YA_EXISTE = "Ya existe un registro de grupos programas con el mismo grupo y programa que está intentando crear.";
-            public const string MENSAJE_GRUPOPROGRAMA_NO_EXISTE_GRUPO_PROGRAMA = "No existe un registro de grupos programas con el mismo grupo y programa indicado.";
+            public const string MENSAJE_ACCION_NO_EXISTE_ID = "No existe un registro de acciones con el Id indicado.";
+            public const string MENSAJE_ACCION_CODIGO_EXISTE = "Ya existe un registro de acciones con el mismo código de acción que está intentando crear.";
+            public const string MENSAJE_ACCION_NO_EXISTE_CODIGO = "No existe un registro de acciones con el código de acción indicado.";
         }
 
         public static class Permisos
@@ -78,6 +78,14 @@
             public const string MENSAJE_PERMISO_NO_EXISTE_ID = "No existe un registro de permisos con el Id indicado.";
             public static string MENSAJE_PERMISO_INACTIVO(string codigo) => $"El código de permiso de usuario ({codigo}) se encuentra inactivo.";
             public static string MENSAJE_PERMISO_NO_EXISTE_CODIGO(string codigo) => $"No existe un registro de permisos con el código de permiso indicado. ({codigo})";
+            public const string MENSAJE_PERMISO_CODIGO_EXISTE = "Ya existe un registro de permiso con el código programa y código de acción que está intentando crear.";
+        }
+
+        public static class GruposPermisos
+        {
+            public const string MENSAJE_GRUPOPERMISO_NO_EXISTE_ID = "No existe un registro de grupos permisos con el Id indicado.";
+            public const string MENSAJE_GRUPOPERMISO_YA_EXISTE = "Ya existe un registro de grupos permisos con el mismo grupo y permiso que está intentando crear.";
+            public const string MENSAJE_GRUPOPERMISO_NO_EXISTE_GRUPO_PERMISO = "No existe un registro de grupos permisos con el mismo grupo y permiso indicado.";
         }
         #endregion
 

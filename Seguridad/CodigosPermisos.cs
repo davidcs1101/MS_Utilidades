@@ -1,6 +1,6 @@
 ﻿namespace Utilidades.Seguridad
 {
-    public static class Permisos
+    public static class CodigosPermisos
     {
         public static class Grupos 
         {
@@ -20,6 +20,15 @@
             public const string LISTAR = "PROGRAMAS.LISTAR";
         }
 
+        public static class Acciones
+        {
+            public const string CONSULTAR = "ACCIONES.CONSULTAR";
+            public const string CREAR = "ACCIONES.CREAR";
+            public const string MODIFICAR = "ACCIONES.MODIFICAR";
+            public const string ELIMINAR = "ACCIONES.ELIMINAR";
+            public const string LISTAR = "ACCIONES.LISTAR";
+        }
+
         public static class Usuarios
         {
             public const string CREARCONSEDE = "USUARIOS.CREARCONSEDE";
@@ -33,6 +42,20 @@
             public const string CREAR = "USUARIOSSEDESGRUPOS.CREAR";
             public const string MODIFICAR = "USUARIOSSEDESGRUPOS.MODIFICAR";
             public const string ELIMINAR = "USUARIOSSEDESGRUPOS.ELIMINAR";
+        }
+
+        public static class Permisos
+        {
+            public const string MODIFICAR = "PERMISOS.MODIFICAR";
+            public const string LISTAR = "PERMISOS.LISTAR";
+        }
+
+        public static class GruposPermisos
+        {
+            public const string CREAR = "GRUPOSPERMISOS.CREAR";
+            public const string MODIFICAR = "GRUPOSPERMISOS.MODIFICAR";
+            public const string ELIMINAR = "GRUPOSPERMISOS.ELIMINAR";
+            public const string LISTAR = "GRUPOSPERMISOS.LISTAR";
         }
     }
 }
