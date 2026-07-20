@@ -48,6 +48,7 @@
         {
             public const string MODIFICAR = "PERMISOS.MODIFICAR";
             public const string LISTAR = "PERMISOS.LISTAR";
+            public const string CONSULTAR = "PERMISOS.CONSULTAR";
         }
 
         public static class GruposPermisos
