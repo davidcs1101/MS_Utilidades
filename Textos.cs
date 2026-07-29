@@ -21,6 +21,9 @@
             public const string VALIDA_CAMPO_OBLIGATORIO = "El dato es obligatorio.";
             public const string VALIDA_VALOR_EXCEDE_LONGITUD = "El valor ingresado supera la longitud máxima permitida.";
             public const string VALIDA_CORREO_NO_VALIDO = "El correo electrónico no es válido.";
+
+            public static string MENSAJE_PARAMETROEXTERNO_NO_EXISTE_EN_CODIGOCATALOGO(string codigoCatalogo, string codigo)
+                => $"No existe un parámetro externo con el código {codigo} en el catálogo {codigoCatalogo}.";
         }
 
 
@@ -90,7 +93,6 @@
         #endregion
 
 
-
         #region REG_Textos del microservicio DatosComunes
         public static class Listas
         {
@@ -125,7 +127,6 @@
         }
 
         #endregion
-
 
 
         #region REG_Textos del microservicio empresas

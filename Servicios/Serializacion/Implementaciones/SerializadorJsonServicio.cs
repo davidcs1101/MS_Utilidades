@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
-using Utilidades.Serializacion.Interfaces;
-namespace Utilidades.Serializacion.Implementaciones
+using Utilidades.Servicios.Serializacion.Interfaces;
+namespace Utilidades.Servicios.Serializacion.Implementaciones
 {
     public class SerializadorJsonServicio : ISerializadorJsonServicio
     {

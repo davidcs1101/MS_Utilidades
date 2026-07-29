@@ -1,4 +1,4 @@
-﻿namespace Utilidades.Serializacion.Interfaces
+﻿namespace Utilidades.Servicios.Serializacion.Interfaces
 {
     public interface ISerializadorJsonServicio
     {
