@@ -38,7 +38,7 @@
 
             public const string MENSAJE_USUARIO_NOMBRE_EXISTE = "Ya existe un registro de usuario con el mismo nombre de usuario que está intentando crear.";
             public const string MENSAJE_USUARIO_EMAIL_EXISTE = "Ya existe otro registro de usuario con el mismo email de usuario que está intentando asignar.";
-            public const string MENSAJE_USUARIO_DOCUMENTO_EXISTE = "Ya existe un registro de usuario con el mismo documento y tipo de usuario que está intentando crear.";
+            public const string MENSAJE_USUARIO_DOCUMENTO_EXISTE = "Ya existe un registro de usuario con el mismo número de documento y tipo de documento de usuario que está intentando crear.";
             public const string MENSAJE_USUARIO_NO_EXISTE_ID = "No existe un registro de usuarios con el Id indicado.";
             public const string MENSAJE_USUARIO_NO_EXISTE_NOMBRE = "No existe un registro de usuarios con el nombre de usuario indicado.";
             public const string MENSAJE_USUARIO_NO_CAMBIO_CLAVE = "El usuario no ha realizado el cambio de clave. No tienes permiso para realizar la acción.";
