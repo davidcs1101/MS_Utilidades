@@ -58,5 +58,10 @@
             public const string ELIMINAR = "GRUPOSPERMISOS.ELIMINAR";
             public const string LISTAR = "GRUPOSPERMISOS.LISTAR";
         }
+
+        public static class RecepcionEventosSeguridad
+        {
+            public const string CREAR = "RECEPCIONEVENTOSSEGURIDAD.CREAR";
+        }
     }
 }

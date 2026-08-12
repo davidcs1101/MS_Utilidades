@@ -22,8 +22,11 @@
             public const string VALIDA_VALOR_EXCEDE_LONGITUD = "El valor ingresado supera la longitud máxima permitida.";
             public const string VALIDA_CORREO_NO_VALIDO = "El correo electrónico no es válido.";
 
-            public static string MENSAJE_PARAMETROEXTERNO_NO_EXISTE_EN_CODIGOCATALOGO(string codigoCatalogo, string codigo)
+            public static string MENSAJE_MAESTROEXTERNO_NO_EXISTE_EN_CODIGOMAESTRO(string codigoCatalogo, string codigo)
                 => $"No existe un parámetro externo con el código {codigo} en el catálogo {codigoCatalogo}.";
+
+            public static string MENSAJE_PERMISO_NO_AUTORIZADO(string codigoPermiso, string codigoGrupo = "")
+                => $"El usuario no tiene permiso para acceder al recurso solicitado. grupo: {codigoGrupo} - permiso: {codigoPermiso}";
         }
 
 
