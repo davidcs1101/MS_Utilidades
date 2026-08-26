@@ -2,7 +2,7 @@
 {
     public static class Politicas
     {
-        public const string Permiso = "Permiso";
-        public const string Sistema = "Sistema";
+        public const string PERMISO = "Permiso";
+        public const string GRUPOSFUNCIONESSISTEMA = "FuncionesSistema";
     }
 }

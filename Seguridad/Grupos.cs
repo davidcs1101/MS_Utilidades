@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Utilidades.Seguridad
+﻿namespace Utilidades.Seguridad
 {
     public static class Grupos
     {
         public const string ADMINISTRADORSISTEMA = "ADMINISTRADORSISTEMA";
+        public const string MSINTEGRACION = "MSINTEGRACION";
+
         public const string ADMINISTRADOREMPRESA = "ADMINISTRADOREMPRESA";
     }
 }

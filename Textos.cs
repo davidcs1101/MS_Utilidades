@@ -16,7 +16,7 @@
             public const string MENSAJE_CORREO_ADJUNTOS_ERROR = "Error al procesar datos adjuntos del correo.";
             public const string MENSAJE_ERROR_CONSUMO_SERVICIO = "Error al consumir el servicio.";
             public const string MENSAJE_TOKEN_SIN_USUARIOID = "No se encontró el 'UsuarioId' en el token JWT.";
-            public const string MENSAJE_TOKEN_SIN_GRUPO = "No se encontró el 'CodigoGrupo' en el token JWT.";
+            public const string MENSAJE_TOKEN_SIN_GRUPO = "No se encontró el CodigoGrupo en el token JWT.";
 
             public const string VALIDA_CAMPO_OBLIGATORIO = "El dato es obligatorio.";
             public const string VALIDA_VALOR_EXCEDE_LONGITUD = "El valor ingresado supera la longitud máxima permitida.";
@@ -48,6 +48,8 @@
 
             public const string MENSAJE_USUARIO_AUDITORIA_NO_EXISTE_ID = "El usuario indicado en el campo de auditoría no existe (usuario que crea, actualiza, o elimina).";
             public const string MENSAJE_USUARIO_NO_TIENE_GRUPO_DIRECTO = "El usuario no cuenta con un grupo directamente asociado.";
+            public const string MENSAJE_USUARIO_NO_TIENE_GRUPO_INTEGRACION = "El usuario no pertenece al grupo MSINTEGRACION.";
+            public const string MENSAJE_USUARIO_INACTIVO = "El usuario se encuentra inactivo.";
         }
 
         public static class UsuariosSedesGrupos
@@ -56,6 +58,7 @@
             public const string MENSAJE_USUARIOSEDEGRUPO_NO_TIENE_SEDES_ACTIVAS = "El usuario indicado no tiene sedes asociadas en estado activo.";
             public const string MENSAJE_USUARIOSEDEGRUPO_YA_TIENE_SEDE_ASOCIADA = "El usuario indicado ya se encuentra asignado a la sede.";
             public const string MENSAJE_USUARIOSEDEGRUPO_NO_EXISTE_USUARIO_SEDE = "No existe un registro de UsuariosSedesGrupos con el UsuarioId y SedeId indicado.";
+            public const string MENSAJE_USUARIOSEDEGRUPO_ASOCIACION_INACTIVA = "La asociadas de usuario y sede se encuentra inactiva.";
         }
 
         public static class Grupos
@@ -168,7 +171,7 @@
             public const string MENSAJE_CONFIGURACION_NO_EXISTE_ID = "No existe un registro de configuración con el Id de configuración y empresa indicados.";
             public const string MENSAJE_CONFIGURACION_CODIGO_EXISTE = "Ya existe un registro de configuración de correo en la empresa con el mismo código de configuración que está intentando crear.";
             public const string MENSAJE_CONFIGURACION_NO_EXISTE_CODIGO = "No existe un registro de configuración de correo en la empresa con el código de configuración indicado.";
-            public const string MENSAJE_CONFIGURACION_INACTIVA = "El código de configuración de correo se encuentra inactiva.";
+            public const string MENSAJE_CONFIGURACION_INACTIVA = "El código de configuración de correo se encuentra inactivo.";
         }
 
         public static class Plantillas
@@ -176,7 +179,7 @@
             public const string MENSAJE_PLANTILLA_NO_EXISTE_ID = "No existe un registro de plantilla con el Id de plantilla y empresa indicados.";
             public const string MENSAJE_PLANTILLA_CODIGO_EXISTE = "Ya existe un registro de plantillas de correo en la empresa con el mismo código de plantilla que está intentando crear.";
             public const string MENSAJE_PLANTILLA_NO_EXISTE_CODIGO = "No existe un registro de plantillas de correo en la empresa con el código de plantilla indicado.";
-            public const string MENSAJE_PLANTILLA_INACTIVA = "El código de plantilla de correo se encuentra inactiva.";
+            public const string MENSAJE_PLANTILLA_INACTIVA = "El código de plantilla de correo se encuentra inactivo.";
         }
 
         #endregion
