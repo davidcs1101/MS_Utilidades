@@ -143,11 +143,13 @@
             public const string MENSAJE_EMPRESA_VERIFICADA = "La empresa se ha verificado de manera correcta.";
             public const string MENSAJE_EMPRESA_YA_VERIFICADA = "La empresa ya se encuentra verificada.";
             public const string MENSAJE_EMPRESA_EXCEDE_CANTIDAD_SEDES = "El consecutivo para la nueva sede supera la cantidad de sedes permitidas para la empresa.";
+            public const string MENSAJE_EMPRESA_INACTIVA = "El registro de empresa se encuentra inactivo.";
         }
 
         public static class Sedes
         {
             public const string MENSAJE_SEDE_NO_EXISTE_ID = "No existe un registro de sedes con el Id indicado.";
+            public const string MENSAJE_SEDE_INACTIVA = "El registro de sede se encuentra inactivo.";
         }
 
         public static class SedesSalud

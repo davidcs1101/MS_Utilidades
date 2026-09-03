@@ -16,5 +16,6 @@ namespace Utilidades
         public const string CONSTANTESDETALLEACTUALIZADO = "CONSTANTESDETALLEACTUALIZADO";
         public const string PERMISOSACTUALIZADOS = "PERMISOSACTUALIZADOS";
         public const string SEDESACTUALIZADAS = "SEDESACTUALIZADAS";
+        public const string EMPRESASACTUALIZADAS = "EMPRESASACTUALIZADAS";
     }
 }
