@@ -5,7 +5,7 @@ using Utilidades.Servicios.Serializacion.Interfaces;
 using Utilidades.Servicios.Http.Interfaces;
 using Utilidades.Servicios.Http.Interfaces.Contextos;
 
-namespace DCO.Aplicacion.Servicios.Implementaciones
+namespace Utilidades.Servicios.Http.Implementaciones
 {
     public class MSSeguridad : IMSSeguridad
     {
@@ -24,10 +24,10 @@ namespace DCO.Aplicacion.Servicios.Implementaciones
             _servicioComun = servicioComun;
         }
 
-        public async Task<List<AutorizacionDto?>> ListarSedesAsync()
+        public async Task<List<AutorizacionDto>> ListarCatalogoAutorizacion()
         {
-            return await _servicioComun.ObtenerRespuestaHttpAsync<List<AutorizacionDto?>>(
-                funcionEjecutar: _msSeguridadBackgroundServicio.ListarPermisosAsync);
+            return await _servicioComun.ObtenerRespuestaHttpAsync<List<AutorizacionDto>>(
+                funcionEjecutar: _msSeguridadBackgroundServicio.ListarCatalogoAutorizacionAsync); 
         }
 
         public async Task<List<UsuarioDto>?> ListarUsuarios(IdsListadoDto idsListadoDto) 

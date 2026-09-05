@@ -5,10 +5,14 @@ namespace Utilidades.Servicios.Http.Interfaces.Contextos
 {
     public interface IMSSeguridadBackgroundServicio
     {
-        [Post("/autenticacion/autenticarUsuario")]
-        Task<HttpResponseMessage> AutenticarUsuarioAsync([Body] AutenticacionRequest autenticacionRequest);
-
         [Get("/permisos/listar")]
         Task<HttpResponseMessage> ListarPermisosAsync();
+
+        [Get("/autorizacion/listarCatalogoAutorizacion")]
+        Task<HttpResponseMessage> ListarCatalogoAutorizacionAsync();
+
+        //[Headers("")]
+        [Post("/usuarios/registrarConSede")]
+        Task<HttpResponseMessage> RegistrarConSedeAsync([Body] UsuarioSedeCreacionRequest usuarioSedeCreacionRequest);
     }
 }
