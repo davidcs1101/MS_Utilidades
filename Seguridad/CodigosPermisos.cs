@@ -2,6 +2,7 @@
 {
     public static class CodigosPermisos
     {
+        #region REG_Permisos SEG.Seguridad
         public static class Grupos 
         {
             public const string CONSULTAR = "GRUPOS.CONSULTAR";
@@ -63,5 +64,48 @@
         {
             public const string CREAR = "RECEPCIONEVENTOSSEGURIDAD.CREAR";
         }
+        #endregion
+
+
+        #region REG_Permisos DCO.DatosComunes
+        public static class DatosConstantes
+        {
+            public const string CONSULTAR = "DATOSCONSTANTES.CONSULTAR";
+            public const string CREAR = "DATOSCONSTANTES.CREAR";
+            public const string MODIFICAR = "DATOSCONSTANTES.MODIFICAR";
+            public const string ELIMINAR = "DATOSCONSTANTES.ELIMINAR";
+            public const string LISTAR = "DATOSCONSTANTES.LISTAR";
+        }
+
+        public static class DatosConstantesDetalles
+        {
+            public const string CREAR = "DATOSCONSTANTESDETALLES.CREAR";
+            public const string MODIFICAR = "DATOSCONSTANTESDETALLES.MODIFICAR";
+        }
+
+        public static class Geografia
+        {
+            public const string LISTAR = "GEOGRAFIA.LISTAR";
+        }
+
+        public static class Listas
+        {
+            public const string CONSULTAR = "LISTAS.CONSULTAR";
+            public const string CREAR = "LISTAS.CREAR";
+            public const string MODIFICAR = "LISTAS.MODIFICAR";
+            public const string ELIMINAR = "LISTAS.ELIMINAR";
+            public const string LISTAR = "LISTAS.LISTAR";
+        }
+
+        public static class ListasDetalles 
+        {
+            public const string CONSULTAR = "LISTASDETALLES.CONSULTAR";
+            public const string CREAR = "LISTASDETALLES.CREAR";
+            public const string MODIFICAR = "LISTASDETALLES.MODIFICAR";
+            public const string ELIMINAR = "LISTASDETALLES.ELIMINAR";
+            public const string LISTAR = "LISTASDETALLES.LISTAR";
+        }
+        #endregion
+
     }
 }
