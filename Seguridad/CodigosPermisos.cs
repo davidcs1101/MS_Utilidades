@@ -59,11 +59,6 @@
             public const string ELIMINAR = "GRUPOSPERMISOS.ELIMINAR";
             public const string LISTAR = "GRUPOSPERMISOS.LISTAR";
         }
-
-        public static class RecepcionEventosSeguridad
-        {
-            public const string CREAR = "RECEPCIONEVENTOSSEGURIDAD.CREAR";
-        }
         #endregion
 
 
@@ -104,6 +99,7 @@
             public const string MODIFICAR = "LISTASDETALLES.MODIFICAR";
             public const string ELIMINAR = "LISTASDETALLES.ELIMINAR";
             public const string LISTAR = "LISTASDETALLES.LISTAR";
+
         }
         #endregion
 
