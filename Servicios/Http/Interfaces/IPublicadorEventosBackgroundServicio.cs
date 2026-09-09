@@ -2,6 +2,6 @@
 {
     public interface IPublicadorEventosBackgroundServicio
     {
-        Task<HttpResponseMessage> PublicarActualizacion(string url, string tipoEvento);
+        Task<HttpResponseMessage> PublicarActualizacion(string url, string tipoEvento, string payload = "");
     }
 }

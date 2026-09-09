@@ -15,11 +15,12 @@ namespace Utilidades.Servicios.Http.Implementaciones
             _respuestaHttpValidador = respuestaHttpValidador;
         }
 
-        public async Task<HttpResponseMessage> PublicarActualizacion(string url, string tipoEvento)
+        public async Task<HttpResponseMessage> PublicarActualizacion(string url, string tipoEvento, string payload = "")
         {
             var requestUrl = $"{url}";
             var evento = new ColaSolicitudCreacionRequest();
             evento.Tipo = tipoEvento;
+            evento.Payload = payload;
 
             var respuesta = await _httpClient.PostAsJsonAsync(requestUrl, evento);
             await _respuestaHttpValidador.ValidarRespuesta(respuesta, Textos.Generales.MENSAJE_ERROR_CONSUMO_SERVICIO);
