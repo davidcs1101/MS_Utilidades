@@ -6,5 +6,6 @@
         public const string TIPOIDENTIREGISTROUSUARIO = CodigosConstantes.TIPOIDENTIREGISTROUSUARIO;
         public const string SEDES = "SEDES";
         public const string EMPRESAS = "EMPRESAS";
+        public const string USUARIOS = "USUARIOS";
     }
 }

@@ -1,9 +1,10 @@
 ﻿using Utilidades;
 using Utilidades.Dtos;
+using Utilidades.Dtos.Empresas;
 using Utilidades.Dtos.Seguridad;
-using Utilidades.Servicios.Serializacion.Interfaces;
 using Utilidades.Servicios.Http.Interfaces;
 using Utilidades.Servicios.Http.Interfaces.Contextos;
+using Utilidades.Servicios.Serializacion.Interfaces;
 
 namespace Utilidades.Servicios.Http.Implementaciones
 {
@@ -41,6 +42,19 @@ namespace Utilidades.Servicios.Http.Implementaciones
             }
 
             return resultado.Data;
+        }
+
+        public async Task<UsuarioDto?> ObtenerUsuarioPorId(int usuarioId)
+        {
+            return await _servicioComun.ObtenerRespuestaHttpAsync<int, UsuarioDto?>(
+                funcionEjecutar: _msSeguridadBackgroundServicio.ObtenerUsuarioPorIdAsync,
+                request: usuarioId);
+        }
+
+        public async Task<List<UsuarioDto?>> ListarUsuariosAsync()
+        {
+            return await _servicioComun.ObtenerRespuestaHttpAsync<List<UsuarioDto?>>(
+                funcionEjecutar: _msSeguridadBackgroundServicio.ListarUsuariosAsync);
         }
     }
 }

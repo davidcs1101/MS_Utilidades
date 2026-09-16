@@ -11,8 +11,13 @@ namespace Utilidades.Servicios.Http.Interfaces.Contextos
         [Get("/autorizacion/listarCatalogoAutorizacion")]
         Task<HttpResponseMessage> ListarCatalogoAutorizacionAsync();
 
+        
         //[Headers("")]
         [Post("/usuarios/registrarConSede")]
         Task<HttpResponseMessage> RegistrarConSedeAsync([Body] UsuarioSedeCreacionRequest usuarioSedeCreacionRequest);
+        [Get("/usuarios/listar")]
+        Task<HttpResponseMessage> ListarUsuariosAsync();
+        [Get("/usuarios/obtenerPorId")]
+        Task<HttpResponseMessage> ObtenerUsuarioPorIdAsync([Query] int id);
     }
 }
