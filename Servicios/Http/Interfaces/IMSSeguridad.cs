@@ -9,5 +9,6 @@ namespace Utilidades.Servicios.Http.Interfaces
         Task<List<AutorizacionDto>> ListarCatalogoAutorizacion();
         Task<UsuarioDto?> ObtenerUsuarioPorId(int usuarioId);
         Task<List<UsuarioDto>?> ListarUsuariosAsync();
+        Task<UsuarioOtrosDatosDto> RegistrarConSedeAsync(UsuarioSedeCreacionRequest usuarioSedeDto)
     }
 }

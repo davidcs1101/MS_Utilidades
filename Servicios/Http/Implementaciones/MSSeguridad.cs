@@ -56,5 +56,12 @@ namespace Utilidades.Servicios.Http.Implementaciones
             return await _servicioComun.ObtenerRespuestaHttpAsync<List<UsuarioDto?>>(
                 funcionEjecutar: _msSeguridadBackgroundServicio.ListarUsuariosAsync);
         }
+
+        public async Task<UsuarioOtrosDatosDto> RegistrarConSedeAsync(UsuarioSedeCreacionRequest usuarioSedeDto)
+        {
+            return await _servicioComun.ObtenerRespuestaHttpAsync<UsuarioSedeCreacionRequest, UsuarioOtrosDatosDto>(
+                funcionEjecutar: _msSeguridadBackgroundServicio.RegistrarConSedeAsync,
+                request: usuarioSedeDto);
+        }
     }
 }
