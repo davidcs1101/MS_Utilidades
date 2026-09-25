@@ -103,5 +103,53 @@
         }
         #endregion
 
+
+
+
+
+
+
+
+        #region REG_Permisos ECO.EnvioCorreos
+        public static class ConfiguracionesSmtp
+        {
+            public const string CREAR = "CONFIGURACIONSMTP.CREAR";
+            public const string MODIFICAR = "CONFIGURACIONSMTP.MODIFICAR";
+            public const string CONSULTAR = "CONFIGURACIONSMTP.CONSULTAR";
+            public const string LISTAR = "CONFIGURACIONSMTP.LISTAR";
+        }
+
+        public static class PlantillasCorreo
+        {
+            public const string CREAR = "PLANTILLASCORREO.CREAR";
+            public const string MODIFICAR = "PLANTILLASCORREO.MODIFICAR";
+            public const string CONSULTAR = "PLANTILLASCORREO.CONSULTAR";
+            public const string LISTAR = "PLANTILLASCORREO.LISTAR";
+        }
+        #endregion
+
+
+        #region REG_Permisos EMP.Empresas
+        public static class Empresas
+        {
+            public const string CREAR = "EMPRESAS.CREAR";
+            public const string VERIFICAR = "EMPRESAS.VERIFICAR";//OJO NUEVA ACCION PARA VERIFICAR SI EXISTE LA EMPRESA
+            public const string CONSULTAR = "EMPRESAS.CONSULTAR";
+            public const string LISTAR = "EMPRESAS.LISTAR";
+        }
+
+        public static class Sedes
+        {
+            public const string CREAR = "SEDES.CREAR";
+            public const string CONSULTAR = "SEDES.CONSULTAR";
+            public const string LISTAR = "SEDES.LISTAR";
+        }
+
+        public static class SedesSalud
+        {
+            public const string CREAR = "SEDESSALUD.CREAR";
+        }
+        #endregion
+
     }
 }
