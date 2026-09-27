@@ -132,6 +132,10 @@
             public const string MENSAJE_DATOCONSTANTEDETALLE_LISTADETALLE_NO_EXISTE_ID = "No existe un registro de datos constante detalle con el Id indicado.";
         }
 
+        public static class Geografia
+        {
+            public const string MENSAJE_MUNICIPIO_NO_EXISTE_CODIGO = "No existe un registro de municipios con el código de municipio indicado.";
+        }
         #endregion
 
 
@@ -144,6 +148,7 @@
             public const string MENSAJE_EMPRESA_YA_VERIFICADA = "La empresa ya se encuentra verificada.";
             public const string MENSAJE_EMPRESA_EXCEDE_CANTIDAD_SEDES = "El consecutivo para la nueva sede supera la cantidad de sedes permitidas para la empresa.";
             public const string MENSAJE_EMPRESA_INACTIVA = "El registro de empresa se encuentra inactivo.";
+            public const string MENSAJE_EMPRESA_DOCUMENTO_NO_EXISTE = "No existe un registro de empresas con el documento y tipo de identificación indicados.";
         }
 
         public static class Sedes
