@@ -20,5 +20,17 @@ namespace Utilidades.Servicios.Http.Implementaciones
                 funcionEjecutar: () => _msDatosComunesBackgroundServicio.ListarListasDetallePorCodigosConstanteAsync(codigosConstante));
         }
 
+        public async Task<List<ListaDetalleDto?>> ListarListasDetallePorCodigosListaAsync(List<string> codigosLista)
+        {
+            return await _servicioComun.ObtenerRespuestaHttpAsync<List<ListaDetalleDto?>>(
+                funcionEjecutar: () => _msDatosComunesBackgroundServicio.ListarListasDetallePorCodigosListaAsync(codigosLista));
+        }
+
+        public async Task<List<UbicacionCompletaDto?>> ListarGeografiaAsync()
+        {
+            return await _servicioComun.ObtenerRespuestaHttpAsync<List<UbicacionCompletaDto?>>(
+                funcionEjecutar: _msDatosComunesBackgroundServicio.ListarGeografiaAsync);
+        }
+
     }
 }

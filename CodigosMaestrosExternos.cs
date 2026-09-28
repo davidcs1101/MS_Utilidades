@@ -4,6 +4,7 @@
     {
         public const string TIPOSIDENTIFICACIONEMPRESA = CodigosConstantes.TIPOSIDENTIFICACIONEMPRESA;
         public const string TIPOIDENTIREGISTROUSUARIO = CodigosConstantes.TIPOIDENTIREGISTROUSUARIO;
+        public const string NIVELESCOMPLEJIDAD = CodigosListas.NIVELESCOMPLEJIDAD;
         public const string SEDES = "SEDES";
         public const string EMPRESAS = "EMPRESAS";
         public const string USUARIOS = "USUARIOS";

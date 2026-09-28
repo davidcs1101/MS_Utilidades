@@ -8,6 +8,8 @@ namespace Utilidades.Servicios.Http.Interfaces.Contextos
 
         [Post("/listasDetalles/listarPorCodigosConstante")]
         Task<HttpResponseMessage> ListarListasDetallePorCodigosConstanteAsync(List<string> codigosConstante);
+        [Post("/listasDetalles/listarPorCodigosLista")]
+        Task<HttpResponseMessage> ListarListasDetallePorCodigosListaAsync(List<string> codigosLista);
 
         [Get("/listasDetalles/listarPorCodigoLista")]
         Task<HttpResponseMessage> ListarListasDetallePorCodigoListaAsync([Query] string codigoLista);
