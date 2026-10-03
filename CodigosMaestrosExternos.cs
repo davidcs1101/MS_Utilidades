@@ -8,5 +8,8 @@
         public const string SEDES = "SEDES";
         public const string EMPRESAS = "EMPRESAS";
         public const string USUARIOS = "USUARIOS";
+        public const string PAISES = "PAISES";
+        public const string DEPARTAMENTOS = "DEPARTAMENTOS";
+        public const string MUNICIPIOS = "MUNICIPIOS";
     }
 }
