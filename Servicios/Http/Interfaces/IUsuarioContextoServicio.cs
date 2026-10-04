@@ -4,5 +4,7 @@
     {
         int ObtenerUsuarioIdToken();
         string ObtenerCodigoGrupo();
+        int ObtenerEmpresaIdToken();
+        int ValidarEmpresaIdToken(int empresaIdBody);
     }
 }
