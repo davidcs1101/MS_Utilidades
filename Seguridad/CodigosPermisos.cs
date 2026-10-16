@@ -133,7 +133,7 @@
         public static class Empresas
         {
             public const string CREAR = "EMPRESAS.CREAR";
-            public const string VERIFICAR = "EMPRESAS.VERIFICAR";//OJO NUEVA ACCION PARA VERIFICAR SI EXISTE LA EMPRESA
+            public const string VERIFICAR = "EMPRESAS.VERIFICAR";
             public const string CONSULTAR = "EMPRESAS.CONSULTAR";
             public const string LISTAR = "EMPRESAS.LISTAR";
         }
@@ -150,6 +150,5 @@
             public const string CREAR = "SEDESSALUD.CREAR";
         }
         #endregion
-
     }
 }

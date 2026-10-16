@@ -16,15 +16,11 @@ namespace Utilidades.Dtos.Correos
 
         [EmailAddress(ErrorMessage = Textos.Generales.VALIDA_CORREO_NO_VALIDO)]
         public string? CorreoRespuesta { get; set; }
-        
-        [Required(ErrorMessage = Textos.Generales.VALIDA_CAMPO_OBLIGATORIO)]
-        public string Asunto { get; set; } = null!;
+        public string Asunto { get; set; } = "";
+        public string Cuerpo { get; set; } = "";
 
         [Required(ErrorMessage = Textos.Generales.VALIDA_CAMPO_OBLIGATORIO)]
-        public string Cuerpo { get; set; } = null!;
-
-        [Required(ErrorMessage = Textos.Generales.VALIDA_CAMPO_OBLIGATORIO)]
-        public bool EsCuerpoHtml { get; set; }
+        public bool EsCuerpoHtml { get; set; } = false;
 
         public List<CorreoAdjuntoRequest> ArchivosAdjuntos { get; set; } = new List<CorreoAdjuntoRequest>();
 

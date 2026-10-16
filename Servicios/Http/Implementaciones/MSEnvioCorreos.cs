@@ -15,10 +15,10 @@ namespace Utilidades.Servicios.Http.Implementaciones
             _servicioComun = servicioComun;
         }
 
-        public async Task<string> EnviarAsync(CorreoCreacionRequest datoCorreoRequest) 
+        public async Task<string> EnviarCorreoEmpresaAsync(CorreoEmpresaCreacionRequest datoCorreoRequest) 
         {
-            return await _servicioComun.ObtenerRespuestaHttpAsync<CorreoCreacionRequest, string>(
-                funcionEjecutar: _msEnvioCorreosBackgroundServicio.EnviarCorreoAsync,
+            return await _servicioComun.ObtenerRespuestaHttpAsync<CorreoEmpresaCreacionRequest, string>(
+                funcionEjecutar: _msEnvioCorreosBackgroundServicio.EnviarCorreoEmpresaAsync,
                 request: datoCorreoRequest);
         }
     }

@@ -5,7 +5,7 @@ namespace Utilidades.Servicios.Http.Interfaces.Contextos
 {
     public interface IMSEnvioCorreosBackgroundServicio
     {
-        [Post("/correos/enviarCorreo")]
-        Task<HttpResponseMessage> EnviarCorreoAsync([Body] CorreoCreacionRequest datoCorreoRequest);
+        [Post("/correos/enviarCorreoEmpresa")]
+        Task<HttpResponseMessage> EnviarCorreoEmpresaAsync([Body] CorreoEmpresaCreacionRequest datoCorreoRequest);
     }
 }

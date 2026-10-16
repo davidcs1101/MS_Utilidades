@@ -3,6 +3,6 @@ namespace Utilidades.Servicios.Http.Interfaces
 {
     public interface IMSEnvioCorreos
     {
-        Task<string> EnviarAsync(CorreoCreacionRequest datoCorreoRequest);
+        Task<string> EnviarCorreoEmpresaAsync(CorreoEmpresaCreacionRequest datoCorreoRequest);
     }
 }
