@@ -15,7 +15,8 @@
         Task<T> ObtenerRespuestaHttpAsync<TRequest, T>
             (Func<TRequest, Task<HttpResponseMessage>> funcionEjecutar, TRequest request);
 
-        Task<T> ObtenerRespuestaHttpAsync<T>(
-            Func<Task<HttpResponseMessage>> funcionEjecutar);
+        Task<T> ObtenerRespuestaHttpAsync<T>(Func<Task<HttpResponseMessage>> funcionEjecutar);
+
+        Task<T> ObtenerRespuestaHttpExternaAsync<T>(Func<Task<HttpResponseMessage>> funcionEjecutar);
     }
 }

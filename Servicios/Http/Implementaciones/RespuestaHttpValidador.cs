@@ -26,5 +26,18 @@ namespace Utilidades.Servicios.Http.Implementaciones
                 throw new SolicitudHttpException(detalleError);
             }
         }
+
+        public async Task ValidarRespuestaExterna(HttpResponseMessage respuesta, string mensaje)
+        {
+            if (!respuesta.IsSuccessStatusCode)
+            {
+                var detalleError = $"{mensaje} {respuesta.ReasonPhrase}. ";
+                var contenidoError = await respuesta.Content.ReadAsStringAsync();
+                if (!string.IsNullOrWhiteSpace(contenidoError))
+                    detalleError += contenidoError;
+
+                throw new SolicitudHttpException(detalleError);
+            }
+        }
     }
 }

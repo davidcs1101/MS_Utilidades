@@ -3,5 +3,7 @@
     public interface IRespuestaHttpValidador
     {
         Task ValidarRespuesta(HttpResponseMessage respuesta, string mensaje);
+
+        Task ValidarRespuestaExterna(HttpResponseMessage respuesta, string mensaje);
     }
 }

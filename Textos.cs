@@ -15,6 +15,7 @@
             public const string MENSAJE_CORREO_CONFIGURACION_ERROR = "Todos los datos de configuración de correo electrónico deben estar diligenciados en AppSettings.";
             public const string MENSAJE_CORREO_ADJUNTOS_ERROR = "Error al procesar datos adjuntos del correo.";
             public const string MENSAJE_ERROR_CONSUMO_SERVICIO = "Error al consumir el servicio.";
+            public const string MENSAJE_ERROR_CONSUMO_SERVICIO_EXTERNO = "Error al consumir el servicio externo.";
             public const string MENSAJE_TOKEN_SIN_USUARIOID = "No se encontró el 'UsuarioId' en el token JWT.";
             public const string MENSAJE_TOKEN_SIN_GRUPO = "No se encontró el CodigoGrupo en el token JWT.";
 

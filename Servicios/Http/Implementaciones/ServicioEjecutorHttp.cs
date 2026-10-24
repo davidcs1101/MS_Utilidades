@@ -38,5 +38,16 @@ namespace Utilidades.Servicios.Http.Implementaciones
 
             return resultado.Data!;
         }
+
+        public async Task<T> ObtenerRespuestaHttpExternaAsync<T>(
+            Func<Task<HttpResponseMessage>> funcionEjecutar)
+        {
+            //¿USING?
+            using var respuesta = await funcionEjecutar();
+            await _respuestaHttpValidador.ValidarRespuestaExterna(respuesta,MENSAJE_ERROR_CONSUMO_SERVICIO_EXTERNO);
+            var contenidoJson = await respuesta.Content.ReadAsStringAsync();
+
+            return _serializadorJsonServicio.Deserializar<T>(contenidoJson);
+        }
     }
 }
