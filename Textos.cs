@@ -31,6 +31,8 @@
 
             public static string MENSAJE_PERMISO_NO_AUTORIZADO(string codigoPermiso, string codigoGrupo = "")
                 => $"El usuario no tiene permiso para acceder al recurso solicitado. grupo: {codigoGrupo} - permiso: {codigoPermiso}";
+
+            public const string MENSAJE_VALOR_EN_CENTAVOS_NEGATIVO = "El valor no puede ser negativo.";
         }
 
 
@@ -208,12 +210,30 @@
         #endregion
 
 
-
         #region REG_Caches de datos
         public static class CacheDatos 
         {
             public const string MENSAJE_CACHE_DATOSCOMUNES_INICIALIZADA = "Caché de datos comunes inicializada.";
             public const string MENSAJE_CACHE_DATOSCOMUNES_ACTUALIZADA = "Caché de datos comunes actualizada";
+        }
+        #endregion
+
+        #region REG_Textos del microservicio de Pagos en Línea
+        public static class ConfiguracionesWompi
+        {
+            public const string MENSAJE_CONFIGURACIONWOMPI_NO_EXISTE = "No existe una configuración Wompi para la empresa y el código indicados.";
+            public const string MENSAJE_CONFIGURACIONWOMPI_INACTIVA = "La configuración Wompi indicada está inactiva.";
+            public const string MENSAJE_CONFIGURACIONWOMPI_SIN_LLAVE_PRIVADA = "La configuración Wompi no tiene llave privada.";
+            public const string MENSAJE_CONFIGURACIONWOMPI_URL_CHECKOUT_NO_CONFIGURADA = "No está configurada la URL Wompi:UrlCheckout en appsettings.";
+            public const string MENSAJE_CONFIGURACIONWOMPI_AMBIENTE_NO_VALIDO = "El ambiente de la configuración Wompi no es válido.";
+            public const string MENSAJE_CONFIGURACIONWOMPI_ENLACE_NO_DEVUELTO = "Wompi respondió correctamente, pero no devolvió el identificador del enlace.";
+        }
+        public static class PagosWompi
+        {
+            public const string MENSAJE_PAGO_WOMPI_CREADO_CORRECTAMENTE = "Link de pago Wompi creado correctamente.";
+            public const string MENSAJE_PAGO_WOMPI_IMPUESTO_INVALIDO = "Cada impuesto debe informar monto en centavos o porcentaje, pero no ambos.";
+            public const string MENSAJE_PAGO_WOMPI_MONEDA_NO_VALIDA = "Wompi actualmente admite únicamente COP para links de pago.";
+            public const string MENSAJE_PAGO_WOMPI_REFERENCIA_EXCESIVA = "Wompi permite máximo dos referencias de cliente.";
         }
         #endregion
     }

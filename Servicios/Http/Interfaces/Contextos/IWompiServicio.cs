@@ -7,7 +7,4 @@ namespace Utilidades.Servicios.Http.Interfaces.Contextos
         [Post("/payment_links")]
         Task<HttpResponseMessage> CrearLinkAsync([Header("Authorization")] string authorization,[Body] object request);
     }
-
-    public interface IWompiPruebasServicio : IWompiServicio { }
-    public interface IWompiProduccionServicio : IWompiServicio { }
 }
