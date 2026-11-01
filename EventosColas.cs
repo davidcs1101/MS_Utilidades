@@ -12,5 +12,7 @@
         public const string SEDESACTUALIZADAS = "SEDESACTUALIZADAS";
         public const string EMPRESASACTUALIZADAS = "EMPRESASACTUALIZADAS";
         public const string USUARIOSACTUALIZADOS = "USUARIOSACTUALIZADOS";
+
+        public const string RECEPCIONPAGOWOMPI = "RECEPCIONPAGOWOMPI";
     }
 }
