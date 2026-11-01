@@ -234,6 +234,31 @@
             public const string MENSAJE_PAGO_WOMPI_IMPUESTO_INVALIDO = "Cada impuesto debe informar monto en centavos o porcentaje, pero no ambos.";
             public const string MENSAJE_PAGO_WOMPI_MONEDA_NO_VALIDA = "Wompi actualmente admite únicamente COP para links de pago.";
             public const string MENSAJE_PAGO_WOMPI_REFERENCIA_EXCESIVA = "Wompi permite máximo dos referencias de cliente.";
+            public const string MENSAJE_PAGO_WOMPI_ID_TRANSACCION_OBLIGATORIO = "El identificador de transacción Wompi es obligatorio.";
+            public const string MENSAJE_PAGO_WOMPI_NO_EXISTE_CODIGO_TRANSACCION = "No existe un pago Wompi asociado al código de transacción recibido.";
+            public const string MENSAJE_PAGO_WOMPI_EVENTO_NULO = "El evento recibido de Wompi es nulo.";
+            public const string MENSAJE_PAGO_WOMPI_EVENTO_SIN_TRANSACCION = "El evento de Wompi no contiene una transacción.";
+            public const string MENSAJE_PAGO_WOMPI_EVENTO_SIN_ID_ENLACE = "El evento de Wompi no contiene el identificador del enlace de pago.";
+            public const string MENSAJE_PAGO_WOMPI_NO_EXISTE_ID_ENLACE = "No existe un pago Wompi asociado al identificador del enlace recibido.";
+            public const string MENSAJE_PAGO_WOMPI_SIN_SECRETO_EVENTOS = "La configuración Wompi no tiene un secreto de integración de eventos.";
+            public const string MENSAJE_PAGO_WOMPI_FIRMA_EVENTO_INVALIDA = "La firma del evento recibido de Wompi no es válida.";
+            public const string MENSAJE_PAGO_WOMPI_RESPUESTA_SIN_TRANSACCION = "La respuesta del servicio Wompi no contiene datos de transacción.";
+            public const string MENSAJE_PAGO_WOMPI_RESPUESTA_SIN_ID_ENLACE = "La respuesta del servicio Wompi no contiene el identificador del enlace de pago.";
+            public static string MENSAJE_PAGO_WOMPI_ESTADO_NO_SOPORTADO(string? estado)
+                => $"El estado de pago Wompi '{estado}' no está soportado.";
+        }
+        public static class Ach
+        {
+            public const string MENSAJE_ACH_CONFIGURACION_CATALOGO_NO_DEFINIDA = "No está definida la configuración ACH que se usará para sincronizar el catálogo de bancos.";
+            public const string MENSAJE_ACH_CONFIGURACION_NO_EXISTE = "No existe la configuración ACH indicada para sincronizar el catálogo de bancos.";
+            public const string MENSAJE_ACH_CONFIGURACION_INACTIVA = "La configuración ACH indicada está inactiva.";
+            public const string MENSAJE_ACH_CONFIGURACION_INCOMPLETA = "La configuración ACH no tiene todos los datos requeridos para consultar bancos.";
+            public const string MENSAJE_ACH_TOKEN_NO_DEVUELTO = "ACH no devolvió un token de acceso válido.";
+            public const string MENSAJE_ACH_RESPUESTA_BANCOS_INVALIDA = "La respuesta de ACH no contiene una lista válida de bancos.";
+            public const string MENSAJE_ACH_BANCO_SIN_CODIGO = "La respuesta de ACH contiene un banco sin código de entidad financiera.";
+            public const string MENSAJE_ACH_URL_NO_CONFIGURADA = "No está configurada la URL base de ACH en appsettings.";
+            public const string MENSAJE_ACH_LLAVE_CIFRADO_INVALIDA = "La llave de cifrado ACH no tiene un tamaño válido para AES-256.";
+            public const string MENSAJE_ACH_IV_CIFRADO_INVALIDO = "El IV de cifrado ACH no tiene un tamaño válido.";
         }
         #endregion
     }
