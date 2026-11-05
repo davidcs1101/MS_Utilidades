@@ -17,6 +17,8 @@
 
         Task<T> ObtenerRespuestaHttpAsync<T>(Func<Task<HttpResponseMessage>> funcionEjecutar);
 
-        Task<T> ObtenerRespuestaHttpExternaAsync<T>(Func<Task<HttpResponseMessage>> funcionEjecutar);
+        Task<T> ObtenerRespuestaHttpExternaComoJsonAsync<T>(Func<Task<HttpResponseMessage>> funcionEjecutar);
+
+        Task<string> ObtenerRespuestaHttpExternaComoTextoAsync(Func<Task<HttpResponseMessage>> funcionEjecutar);
     }
 }

@@ -39,15 +39,22 @@ namespace Utilidades.Servicios.Http.Implementaciones
             return resultado.Data!;
         }
 
-        public async Task<T> ObtenerRespuestaHttpExternaAsync<T>(
+        public async Task<T> ObtenerRespuestaHttpExternaComoJsonAsync<T>(
             Func<Task<HttpResponseMessage>> funcionEjecutar)
         {
-            //¿USING?
             using var respuesta = await funcionEjecutar();
             await _respuestaHttpValidador.ValidarRespuestaExterna(respuesta,MENSAJE_ERROR_CONSUMO_SERVICIO_EXTERNO);
             var contenidoJson = await respuesta.Content.ReadAsStringAsync();
 
             return _serializadorJsonServicio.Deserializar<T>(contenidoJson);
+        }
+
+        public async Task<string> ObtenerRespuestaHttpExternaComoTextoAsync(
+            Func<Task<HttpResponseMessage>> funcionEjecutar)
+        {
+            using var respuesta = await funcionEjecutar();
+            await _respuestaHttpValidador.ValidarRespuestaExterna(respuesta, MENSAJE_ERROR_CONSUMO_SERVICIO_EXTERNO);
+            return await respuesta.Content.ReadAsStringAsync();
         }
     }
 }

@@ -4,9 +4,13 @@
     {
         public int Id { get; set; }
 
+        public int TipoIdentificacionId { get; set; }
+
         public string TipoIdentificacion { get; set; } = null!;
 
         public string Identificacion { get; set; } = null!;
+
+        public string? CodigoCiiuPrincipal { get; set; }
 
         public Int16 DigitoVerificador { get; set; }
 
