@@ -244,6 +244,7 @@
             public const string MENSAJE_PAGO_WOMPI_FIRMA_EVENTO_INVALIDA = "La firma del evento recibido de Wompi no es válida.";
             public const string MENSAJE_PAGO_WOMPI_RESPUESTA_SIN_TRANSACCION = "La respuesta del servicio Wompi no contiene datos de transacción.";
             public const string MENSAJE_PAGO_WOMPI_RESPUESTA_SIN_ID_ENLACE = "La respuesta del servicio Wompi no contiene el identificador del enlace de pago.";
+            public const string MENSAJE_PAGO_WOMPI_RESPUESTA_SIN_ID_TRANSACCION = "La respuesta de Wompi no contiene el identificador de la transacción.";
             public static string MENSAJE_PAGO_WOMPI_ESTADO_NO_SOPORTADO(string? estado)
                 => $"El estado de pago Wompi '{estado}' no está soportado.";
         }
