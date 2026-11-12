@@ -150,5 +150,16 @@
             public const string CREAR = "SEDESSALUD.CREAR";
         }
         #endregion
+
+
+        #region REG_Permisos PAG.PagosLinea
+        public static class ConfiguracionesWompi
+        {
+            public const string CREAR = "CONFIGURACIONWOMPI.CREAR";
+            public const string MODIFICAR = "CONFIGURACIONWOMPI.MODIFICAR";
+            public const string CONSULTAR = "CONFIGURACIONWOMPI.CONSULTAR";
+            public const string LISTAR = "CONFIGURACIONWOMPI.LISTAR";
+        }
+        #endregion
     }
 }

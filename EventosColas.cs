@@ -14,5 +14,6 @@
         public const string USUARIOSACTUALIZADOS = "USUARIOSACTUALIZADOS";
 
         public const string RECEPCIONPAGOWOMPI = "RECEPCIONPAGOWOMPI";
+        public const string CONSULTAPAGOACH = "CONSULTAPAGOACH";
     }
 }
