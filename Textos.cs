@@ -253,13 +253,46 @@
             public const string MENSAJE_ACH_CONFIGURACION_CATALOGO_NO_DEFINIDA = "No está definida la configuración ACH que se usará para sincronizar el catálogo de bancos.";
             public const string MENSAJE_ACH_CONFIGURACION_NO_EXISTE = "No existe la configuración ACH indicada para sincronizar el catálogo de bancos.";
             public const string MENSAJE_ACH_CONFIGURACION_INACTIVA = "La configuración ACH indicada está inactiva.";
-            public const string MENSAJE_ACH_CONFIGURACION_INCOMPLETA = "La configuración ACH no tiene todos los datos requeridos para consultar bancos.";
+            public const string MENSAJE_ACH_CONFIGURACION_INCOMPLETA = "La configuración ACH no tiene todos los datos requeridos para consumir el servicio.";
             public const string MENSAJE_ACH_TOKEN_NO_DEVUELTO = "ACH no devolvió un token de acceso válido.";
             public const string MENSAJE_ACH_RESPUESTA_BANCOS_INVALIDA = "La respuesta de ACH no contiene una lista válida de bancos.";
             public const string MENSAJE_ACH_BANCO_SIN_CODIGO = "La respuesta de ACH contiene un banco sin código de entidad financiera.";
             public const string MENSAJE_ACH_URL_NO_CONFIGURADA = "No está configurada la URL base de ACH en appsettings.";
             public const string MENSAJE_ACH_LLAVE_CIFRADO_INVALIDA = "La llave de cifrado ACH no tiene un tamaño válido para AES-256.";
             public const string MENSAJE_ACH_IV_CIFRADO_INVALIDO = "El IV de cifrado ACH no tiene un tamaño válido.";
+        }
+        public static class PagosAch
+        {
+            public const string MENSAJE_PAGO_ACH_CREADO_CORRECTAMENTE = "Transacción de pago creada correctamente.";
+            public const string MENSAJE_PAGO_ACH_CONFIGURACION_NO_EXISTE = "No existe una configuración ACH para la empresa y el código indicados.";
+            public const string MENSAJE_PAGO_ACH_CONFIGURACION_INACTIVA = "La configuración ACH indicada está inactiva.";
+            public const string MENSAJE_PAGO_ACH_CONFIGURACION_SIN_SERVICIO = "La configuración ACH no tiene código de servicio.";
+            public const string MENSAJE_PAGO_ACH_CONFIGURACION_SIN_URL_RETORNO = "La configuración ACH no tiene URL de redirección.";
+            public const string MENSAJE_PAGO_ACH_EMPRESA_NO_EXISTE = "No existe la información de la empresa para generar el pago.";
+            public const string MENSAJE_PAGO_ACH_IDENTIFICACION_COMERCIO_INVALIDA = "Los datos del comercio (tipo de identificación, identificación, nombre o CIIU) no son válidos para crear el pago.";
+            public const string MENSAJE_PAGO_ACH_BANCO_NO_VALIDO = "El banco indicado no existe o no está activo.";
+            public const string MENSAJE_PAGO_ACH_VALOR_INVALIDO = "El valor del pago debe ser mayor que cero y tener máximo dos decimales.";
+            public const string MENSAJE_PAGO_ACH_VALOR_IVA_INVALIDO = "El valor del IVA debe tener máximo dos decimales y no puede superar el valor del pago.";
+            public const string MENSAJE_PAGO_ACH_CELULAR_INVALIDO = "El número de celular debe tener 10 dígitos.";
+            public const string MENSAJE_PAGO_ACH_CARACTERES_NO_PERMITIDOS = "Los datos del pago no pueden contener el carácter | ni comillas dobles.";
+            public const string MENSAJE_PAGO_ACH_TIPO_USUARIO_IDENTIFICACION_INVALIDO = "Para el tipo de usuario company el tipo de identificación debe ser NIT, y para person debe ser diferente de NIT.";
+            public const string MENSAJE_PAGO_ACH_MONTO_EXCEDE_LIMITE = "El monto de la transacción excede los límites establecidos para la empresa, por favor comuníquese con la empresa.";
+            public const string MENSAJE_PAGO_ACH_BANCO_NO_DISPONIBLE = "La entidad financiera no puede ser contactada para iniciar la transacción, por favor seleccione otra o intente más tarde.";
+            public const string MENSAJE_PAGO_ACH_NO_SE_PUDO_CREAR = "No se pudo crear la transacción, por favor intente más tarde o comuníquese con la empresa.";
+            public const string MENSAJE_PAGO_ACH_NO_EXISTE_ID = "No existe un pago ACH con el identificador indicado.";
+            public const string MENSAJE_PAGO_ACH_NO_EXISTE_CODIGO_TRANSACCION = "No existe un pago ACH asociado al código de transacción recibido.";
+            public const string MENSAJE_PAGO_ACH_CONSULTA_EXPIRADA = "El tiempo para consultar esta transacción ha vencido.";
+            public const string MENSAJE_PAGO_ACH_SOLICITUD_NO_CREADA = "La transacción de pago no fue creada.";
+            public static string MENSAJE_PAGO_ACH_TIPO_IDENTIFICACION_SIN_HOMOLOGACION(string? codigo)
+                => $"No existe homologación PSE para el tipo de identificación '{codigo}'.";
+            public static string MENSAJE_PAGO_ACH_TIPO_IDENTIFICACION_NO_SOPORTADO(string? valor)
+                => $"El tipo de identificación homologado '{valor}' no es válido para PSE.";
+            public static string MENSAJE_PAGO_ACH_CONSULTA_ERROR(string? codigoRetorno, string? detalle)
+                => $"ACH respondió con error al consultar la transacción. Código: {codigoRetorno}. Detalle: {detalle}";
+            public static string MENSAJE_PAGO_ACH_FINALIZACION_ERROR(string? codigoRetorno, string? detalle)
+                => $"ACH respondió con error al finalizar la transacción. Código: {codigoRetorno}. Detalle: {detalle}";
+            public static string MENSAJE_PAGO_ACH_ESTADO_NO_SOPORTADO(string? estado)
+                => $"El estado de transacción ACH '{estado}' no está soportado.";
         }
         #endregion
     }
