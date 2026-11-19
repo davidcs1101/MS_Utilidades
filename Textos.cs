@@ -285,8 +285,6 @@
             public const string MENSAJE_PAGO_ACH_SOLICITUD_NO_CREADA = "La transacción de pago no fue creada.";
             public static string MENSAJE_PAGO_ACH_TIPO_IDENTIFICACION_SIN_HOMOLOGACION(string? codigo)
                 => $"No existe homologación PSE para el tipo de identificación '{codigo}'.";
-            public static string MENSAJE_PAGO_ACH_TIPO_IDENTIFICACION_NO_SOPORTADO(string? valor)
-                => $"El tipo de identificación homologado '{valor}' no es válido para PSE.";
             public static string MENSAJE_PAGO_ACH_CONSULTA_ERROR(string? codigoRetorno, string? detalle)
                 => $"ACH respondió con error al consultar la transacción. Código: {codigoRetorno}. Detalle: {detalle}";
             public static string MENSAJE_PAGO_ACH_FINALIZACION_ERROR(string? codigoRetorno, string? detalle)
