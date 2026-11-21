@@ -261,6 +261,11 @@
             public const string MENSAJE_ACH_LLAVE_CIFRADO_INVALIDA = "La llave de cifrado ACH no tiene un tamaño válido para AES-256.";
             public const string MENSAJE_ACH_IV_CIFRADO_INVALIDO = "El IV de cifrado ACH no tiene un tamaño válido.";
         }
+        public static class ConfiguracionesAch
+        {
+            public const string MENSAJE_CONFIGURACIONACH_NO_EXISTE = "No existe una configuración ACH para la empresa y el código indicados.";
+            public const string MENSAJE_CONFIGURACIONACH_CODIGO_EXISTE = "Ya existe una configuración ACH con ese código para la empresa.";
+        }
         public static class PagosAch
         {
             public const string MENSAJE_PAGO_ACH_CREADO_CORRECTAMENTE = "Transacción de pago creada correctamente.";
@@ -270,7 +275,8 @@
             public const string MENSAJE_PAGO_ACH_CONFIGURACION_SIN_URL_RETORNO = "La configuración ACH no tiene URL de redirección.";
             public const string MENSAJE_PAGO_ACH_EMPRESA_NO_EXISTE = "No existe la información de la empresa para generar el pago.";
             public const string MENSAJE_PAGO_ACH_IDENTIFICACION_COMERCIO_INVALIDA = "Los datos del comercio (tipo de identificación, identificación, nombre o CIIU) no son válidos para crear el pago.";
-            public const string MENSAJE_PAGO_ACH_BANCO_NO_VALIDO = "El banco indicado no existe o no está activo.";
+            public const string MENSAJE_PAGO_ACH_BANCO_NO_EXISTE = "El banco indicado no existe.";
+            public const string MENSAJE_PAGO_ACH_BANCO_INACTIVO = "El banco indicado está inactivo.";
             public const string MENSAJE_PAGO_ACH_VALOR_INVALIDO = "El valor del pago debe ser mayor que cero y tener máximo dos decimales.";
             public const string MENSAJE_PAGO_ACH_VALOR_IVA_INVALIDO = "El valor del IVA debe tener máximo dos decimales y no puede superar el valor del pago.";
             public const string MENSAJE_PAGO_ACH_CELULAR_INVALIDO = "El número de celular debe tener 10 dígitos.";

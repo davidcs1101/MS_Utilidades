@@ -1,4 +1,4 @@
-﻿namespace Utilidades.Seguridad
+namespace Utilidades.Seguridad
 {
     public static class CodigosPermisos
     {
@@ -159,6 +159,13 @@
             public const string MODIFICAR = "CONFIGURACIONWOMPI.MODIFICAR";
             public const string CONSULTAR = "CONFIGURACIONWOMPI.CONSULTAR";
             public const string LISTAR = "CONFIGURACIONWOMPI.LISTAR";
+        }
+        public static class ConfiguracionesAch
+        {
+            public const string CREAR = "CONFIGURACIONACH.CREAR";
+            public const string MODIFICAR = "CONFIGURACIONACH.MODIFICAR";
+            public const string CONSULTAR = "CONFIGURACIONACH.CONSULTAR";
+            public const string LISTAR = "CONFIGURACIONACH.LISTAR";
         }
         #endregion
     }
